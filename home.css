@@ -1,0 +1,609 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    background-image: url(images/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav 
+{
+    overflow: hidden;
+    
+}
+.logo
+{
+    padding-left: 90px;
+    float: left;
+}
+
+nav a 
+{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 25px;
+    font-family: 'Poppins Medium', sans-serif;
+    font-size: 16px;
+}
+.menu{
+    float: right;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+nav a:hover 
+{
+    color: powderblue;
+}
+
+.active1 
+{
+    color: powderblue;
+}
+
+.mainTitle
+{
+    text-align: center;
+    font-family: 'Poppins Thin', sans-serif;
+    color: white;
+    font-size: 30px;
+    padding-top: 100px;
+}
+.subTitle
+{
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 60px;
+    padding-top: 10px;
+}
+.bodyContent
+{
+    width: 100%;
+    position: relative;
+    
+}
+.card
+{
+    position: absolute;
+    background-color: white;
+    padding: 50px 20px;    
+    z-index: 9;
+    width: 70%;
+    right: 0;
+    left: 0;
+    margin: 130px auto auto auto;
+    box-shadow: 0 6px 4px rgb(0 0 0 / 0.2);
+    
+}
+.cardTitle
+{
+    text-align: center;
+    font-family: 'Poppins Thin', sans-serif;
+    color: #EA9AC0;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+.cardContent
+{
+    margin-left:auto; 
+    margin-right:auto;
+    border-spacing: 10px;
+}
+
+.card table td
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Poppins Light', sans-serif;
+    color: #4D3C64;
+    font-size: 15px;
+    
+}
+.cardContent button
+{
+    background-color: white;
+    display: inline-block;
+    font-family: 'Poppins Light', sans-serif;
+    color: #4D3C64;
+    font-size: 15px;
+    border: 1px solid #402D59;
+    cursor: pointer;
+    
+}
+.cardContent button:hover
+{
+    background-color: #EA9AC0;
+    color: white;
+    border: 1px solid #EA9AC0;
+}
+.mainBody
+{
+    background-color: #f8f9fa;
+    position: absolute;
+    margin-top: 250px;
+    width: 100%;
+}
+.subBody
+{
+    padding: 220px 130px 0px 130px;
+}
+.tablefirstRow
+{
+    padding: 0 70px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.aboutNo
+{
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+.aboutTitle
+{
+    font-family: 'Playfair Display';
+    font-size: 45px;
+    color: black;
+    
+}
+.aboutDesc
+{
+    color: #555454;
+    text-decoration: none;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: justify;
+}
+.learnMore
+{
+    color: #897B92;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .3s ease-in-out;
+}
+.learnMore:hover
+{
+    letter-spacing: 3px;
+    transition: all .3s ease-in-out;
+}
+.room-slideshow-container
+{
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+.roomSlides 
+{
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.roomGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 600px;
+}
+.roomGridItem
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+}
+.roomTd
+{
+    color: #313030;
+    text-decoration: none;
+    font-family: 'Playfair Display';
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+}
+.singleRoomImage
+{
+    background: url("images/singlebed.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all .5s ease-in-out;
+}
+.singleRoomImage:hover
+{
+    background: url("images/singlebed1.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all .5s ease-in-out;
+}
+.doubleRoomImage
+{
+    background: url("images/doublebed.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all .5s ease-in-out;
+}
+.doubleRoomImage:hover
+{
+    background: url("images/doublebed1.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all .5s ease-in-out;
+}
+.tripleRoomImage
+{
+    background: url("images/triplebed.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all .5s ease-in-out;
+}
+.tripleRoomImage:hover
+{
+    background: url("images/triplebed1.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all .5s ease-in-out;
+}
+.rsTd
+{
+    color: #313030;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    display: inline;
+    letter-spacing: 1px;
+}
+.priceTd
+{
+    color: #643A86;
+    text-decoration: none;
+    font-family: 'Benne';
+    font-size: 45px;
+    display: inline;
+    letter-spacing: 0.5px;
+}
+.tableHead
+{
+    color: #383838;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.tableSub
+{
+    color: #787878;
+    text-decoration: none;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.viewDetails
+{
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    font-family: 'Poppins Light', sans-serif;
+    color: #4D3C64;
+    font-size: 15px;
+    border: 1px solid #402D59;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+}
+.viewDetails:hover
+{
+    background-color: #EA9AC0;
+    color: white;
+    border: 1px solid #EA9AC0;
+}
+.facilitiesDiv
+{
+    background-color: #7499C5;
+    width: 100%;
+    /* margin-top: 150px; */
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.facilitiesTitle
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    letter-spacing: 6px;
+}
+.facilitiesTable
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-spacing: 150px 10px;
+}
+.facilities
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.allfacilities
+{
+    text-align: center;
+    margin-top: 20px;
+    transition: all .3s ease-in-out;
+}
+.allfacilities a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.allfacilities:hover
+{
+    letter-spacing: 2px;
+    transition: all .3s ease-in-out;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 50px;
+}
+
+#barTxt, #diningHallTxt, #loungeTxt, #banquetTxt {
+    color: #ececec;
+    text-decoration: none;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .3s ease-in-out;
+}
+#barTxt:hover, #diningHallTxt:hover, #loungeTxt:hover, #banquetTxt:hover
+{
+    padding-left: 20px;
+    letter-spacing: 6px;
+    transition: all .3s ease-in-out;
+}
+#barImg, #diningHallImg, #loungeImg, #banquetImg
+{
+    display: none;
+}
+.testimonial
+{
+    color: #5E5B5B;
+    text-decoration: none;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 6px;
+}
+.wps
+{
+    color: #5E5B5B;
+    text-decoration: none;
+    font-family: 'DM Serif Display';
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5px;
+    letter-spacing: 7px;
+}
+
+/* Slides */
+.mySlides 
+{
+    display: none;
+    padding: 50px 20px 0px 20px;
+    text-align: center;
+}
+
+
+/* Slideshow container */
+.slideshow-container
+{
+    max-width: 1000px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot
+{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active
+{
+  background-color: #717171;
+}
+.guestComment
+{
+    font-style: italic;
+    color: #4D4D4D;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.guest
+{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footerBg
+{
+    width: 100%;
+    background-color: #7499C5;
+    margin-top: 150px;
+    padding-bottom: 40px;
+}
+.footer
+{
+    padding: 40px 110px 0px 110px
+}
+.footerText
+{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins Light', sans-serif;
+    text-align: justify;
+    display: inline-block;
+}
+
+.hover-1
+{
+    text-decoration: none;
+    font-family: 'Poppins Light', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
+    --h: 1.2em;   
+  
+    line-height: var(--h);
+    color: #0000;
+    text-shadow: 
+        0 calc(-1*var(--_t,0em)) white, 
+        0 calc(var(--h) - var(--_t,0em)) rgb(33, 59, 116);
+    overflow: hidden;
+    transition: .3s;
+}
+.hover-1:hover {
+  --_t: var(--h);
+}
+
+.ques {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+    box-shadow: inset 0px -10px 0px 0px rgb(65, 121, 158);
+    transition: all .3s ease-in-out;
+}
+
+.ques:hover
+{
+    box-shadow: inset 0px -1px 0px 0px rgb(65, 121, 158);
+    transition: all .3s ease-in-out;
+}
+
+.footerIcon
+{
+    vertical-align: top;
+    padding-top: 4px;
+    padding-right: 10px;
+    font-size:25px;
+    color:white;
+}
+.footerIcon1
+{
+    padding-top: 4px;
+    padding-right: 10px;
+    font-size:25px;
+    color:white;
+}
+
+.footerIconFx
+{
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 22px;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    border-radius: 5%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+  }
+  .footerIconFx:first-child
+  {
+    margin-left: 0;
+  }
+.footerIconFx:after
+{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 2px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+  
+.footerIconFx:hover
+{
+    background-color: #fff;
+    color: #7499C5;
+}
+  
+.footerIconFx:hover:after
+{
+    opacity: 1;
+    transform: scale(1.15);
+}
